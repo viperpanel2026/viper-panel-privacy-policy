@@ -42,6 +42,7 @@
           color: var(--text);
           line-height: 1.7;
           padding: 18px;
+          transition: background 200ms ease, color 200ms ease;
         }
 
         .container {
@@ -63,6 +64,7 @@
         .badge {
           display: inline-flex;
           align-items: center;
+          gap: 6px;
           padding: 7px 12px;
           border-radius: 999px;
           font-size: 11px;
@@ -76,14 +78,20 @@
           margin: 8px 0 4px;
           font-size: 24px;
           font-weight: 800;
+          letter-spacing: -0.01em;
         }
 
-        .subtitle,
-        .effective-date,
-        p,
-        ul {
+        .subtitle {
+          margin: 0;
           color: var(--muted);
           font-size: 14px;
+          max-width: 680px;
+        }
+
+        .effective-date {
+          margin-top: 10px;
+          font-size: 13px;
+          color: var(--muted);
         }
 
         .grid {
@@ -97,6 +105,13 @@
           border: 1px solid var(--border);
           border-radius: 12px;
           padding: 14px 16px;
+          transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+        }
+
+        .card:hover {
+          transform: translateY(-1px);
+          border-color: var(--accent-soft);
+          box-shadow: 0 12px 26px rgba(0, 0, 0, 0.22);
         }
 
         h2 {
@@ -105,8 +120,20 @@
           color: var(--text);
         }
 
-        p { margin: 0 0 10px; }
-        ul { padding-left: 18px; margin: 6px 0 0; }
+        p {
+          margin: 0 0 10px;
+          color: var(--muted);
+          font-size: 14px;
+        }
+
+        strong { color: var(--text); }
+
+        ul, ol {
+          color: var(--muted);
+          padding-left: 18px;
+          margin: 6px 0 0;
+        }
+
         li + li { margin-top: 4px; }
 
         a {
@@ -142,37 +169,49 @@
         <div class="badge">Official Privacy Policy</div>
         <h1>Viper Panel Privacy Policy</h1>
         <p class="subtitle">
-            This Privacy Policy explains how Viper Panel handles VPN/server access and advertising in the app.
+            This Privacy Policy explains how Viper Panel handles information related to VPN/server access, advertising, and use of our services.
         </p>
         <p class="effective-date"><strong>Effective Date:</strong> March 14, 2026</p>
     </section>
 
     <div class="grid">
         <section class="card">
-            <h2>1. Information We Collect</h2>
+            <h2>1. Introduction</h2>
             <p>
-                Viper Panel does not directly collect personal information for account registration or personal profiling.
-            </p>
-            <p>
-                Any username, password, or similar credential used in the app is only for VPN/server authentication
-                and is not treated as personal user data.
+                Viper Panel provides access to VPN/server services. We respect user privacy and aim to be clear
+                about what information is and is not collected through our service.
             </p>
         </section>
 
         <section class="card">
-            <h2>2. How Information Is Used</h2>
+            <h2>2. Information We Collect</h2>
             <p>
-                Credentials are used only to:
+                Viper Panel does <strong>not directly collect personal information</strong> from users.
+            </p>
+            <p>
+                Any username, password, or similar account credential shown or used in the app is provided only
+                for <strong>VPN/server authentication</strong>, similar to credentials used in other free VPN panels.
+                These credentials are used only to allow access to the server service and are <strong>not treated as personal user data</strong>.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>3. How Credentials Are Used</h2>
+            <p>
+                Authentication credentials are used only to:
             </p>
             <ul>
                 <li>provide access to VPN/server services,</li>
-                <li>authenticate connections, and</li>
-                <li>maintain app functionality.</li>
+                <li>authenticate connections to the server, and</li>
+                <li>maintain proper operation of the app and related services.</li>
             </ul>
+            <p>
+                These credentials are not used to identify users as individuals.
+            </p>
         </section>
 
         <section class="card">
-            <h2>3. Third-Party Advertising</h2>
+            <h2>4. Third-Party Advertising</h2>
             <p>
                 Our app uses <strong>Google AdMob</strong> to display ads.
             </p>
@@ -183,39 +222,37 @@
         </section>
 
         <section class="card">
-            <h2>4. Third-Party Services</h2>
-            <p>
-                The app may use third-party services, including Google AdMob, which may process data according
-                to their own privacy policies.
-            </p>
-        </section>
-
-        <section class="card">
             <h2>5. Data Sharing</h2>
             <p>
-                Viper Panel does not sell or trade personal user information.
-                Some technical or advertising-related data may be processed by third-party services such as Google AdMob.
+                We do not sell, trade, or share personal user data.
+                Authentication credentials are used only as necessary to provide the VPN/server service or when required by law.
+            </p>
+            <p>
+                However, third-party services such as Google AdMob may process certain technical and advertising-related data
+                as part of their services.
             </p>
         </section>
 
         <section class="card">
             <h2>6. Data Security</h2>
             <p>
-                We take reasonable measures to protect authentication and service-related information.
+                We take reasonable measures to protect authentication and service-related information from unauthorized access,
+                misuse, or disclosure.
             </p>
         </section>
 
         <section class="card">
             <h2>7. Changes to This Policy</h2>
             <p>
-                We may update this Privacy Policy from time to time. Any changes will be posted on this page.
+                We may update this Privacy Policy from time to time to improve clarity or reflect service changes.
+                Any updates will be posted on this page.
             </p>
         </section>
 
         <section class="card">
             <h2>8. Contact Us</h2>
             <p>
-                If you have any questions, please contact us at:
+                If you have any questions about this Privacy Policy, please contact us at:
                 <a href="mailto:viperpanel2026@gmail.com">viperpanel2026@gmail.com</a>
             </p>
         </section>
